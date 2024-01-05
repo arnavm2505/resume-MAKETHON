@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#081b29;
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: -160px;
+    width:100%;
+    padding: 8px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size:25px;
+    color: rgb(225, 166, 89);
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color:rgb(225, 166, 89);
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .6s;
+}
+.navbar a:hover{
+    color:rgb(1, 1, 1);
+}
+.home{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+}
+.content{
+    max-width: :600px;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#00abf0;
+}
+.content p{
+    font-size: 25px;
+    margin:20px 0 40px;
+}
+.content .box{
+    display:flex;
+    justify-content: space-between;
+    width:1000px;
+    height:50px;
+}
+.box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 150px; 
+    height:100%;
+    background:■ #eabfe0;
+    border: 2px solid #00abf0;
+    border-radius: 8px; 
+    font-size: 19px; 
+    color:■#081b29;
+    font-weight:600;
+    letter-spacing:1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.box a:nth-child(2){
+    background:transparent;
+    color:#00abf0;
+}
+.box a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background: coral;
+    z-index: -1;
+}
+.btn{
+    color: rgb(0, 255, 85);
+}
+.media{
+    position: absolute;
+    bottom: 40px;
+    width:170px;
+    display: flex;
+    justify-content:space-between;
+}
+.media a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; 
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px; 
+    color:#00abfo;
+    text-decoration:none;
+    z-index: 1;
+    overflow:hidden;
+}
+.media a::before{
+    content:'';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width:0%; 
+    height: 100%; 
+    background:#00abf0; 
+    z-index: -1;
+    transition: .5s;
+}
+.media a:hover{
+    color:#081b29;
+}
+.media a:hover::before{
+    width: 100%;
+}
+.image-section {
+    display: inline-block;
+    float: right;
+    margin-top: -25rem;
+}
